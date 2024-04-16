@@ -1,0 +1,74 @@
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(7, 60px);
+    grid-template-rows: repeat(6, 60px);
+    gap: 5px;
+    background-color: #3498db;
+    border: 10px solid #2980b9;
+    border-radius: 10px;
+  }
+  
+  .board div {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px; /* Slightly rounded cells */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  }
+  
+  .cell {
+    border-radius: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+  }
+  
+  button:hover {
+    background-color: #27ae60;
+  }
+  
+  .disc {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    position: relative;
+    top: -5px; /* Adjust disc position for centered look */
+  }
+  
+  /* Color discs based on player */
+  .disc.red {
+    background-color: #e74c3c;
+  }
+  
+  .disc.yellow {
+    background-color: #f1c40f;
+  }
+  
